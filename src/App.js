@@ -1,10 +1,12 @@
+import Routes from "./routes/Routes";
 import "./App.css";
-import { Card } from "./components/Card";
+import GlobalStyle from "./components/globalStyles/GlobalStyles";
 
 function App() {
   return (
     <>
-      <Card />
+      <Routes />
+      <GlobalStyle />
     </>
   );
 }

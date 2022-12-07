@@ -2,13 +2,12 @@ import React, { useRef, useState } from "react";
 import { Input } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import styled from "styled-components";
-import { TaskList } from "./TaskList";
-import { Task } from "./Task";
+import { TaskList } from "../TaskList";
+import { Task } from "../Task";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const CardContainer = styled.main`
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +16,6 @@ const CardContainer = styled.main`
   width: 445px;
   height: 600px;
   border-radius: 6px;
-  padding: 10px;
 `;
 
 const StyledInput = styled(Input)`
