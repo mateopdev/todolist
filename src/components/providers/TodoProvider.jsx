@@ -4,7 +4,7 @@ import { createContext } from "react";
 
 const TodoContext = createContext();
 
-const initialTodoListState = ["ASDASD"];
+const initialTodoListState = ["Tarea de prueba :D"];
 
 const TodoProvider = ({ children }) => {
   const [todoList, setTodoList] = useState(initialTodoListState);
