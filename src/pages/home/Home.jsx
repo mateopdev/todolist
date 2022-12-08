@@ -1,10 +1,15 @@
 import React from "react";
-import { Card } from "../../components/card";
+import TodoProvider from "../../components/providers/TodoProvider";
+import TodoList from "../../components/TodoList";
+import TodoForm from "../../components/TodoForm";
 
 const Home = () => {
   return (
     <>
-      <Card />
+      <TodoProvider>
+        <TodoForm />
+        <TodoList />
+      </TodoProvider>
     </>
   );
 };
